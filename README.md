@@ -1,6 +1,17 @@
-# EdteamAngular
+# Angular desde cero
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+Mira los detalles del desarrollo de este proyecto, paso a paso, en el curso [ed.team/angular](https://ed.team/angular).
+
+## Setup del entorno de desarrollo
+Necesitas instalar:
+* Git
+* Node
+* Visual Studio Code
+
+Puedes seguir la guía en mi blog para mayores detalles: [Setting up local environment to Develop Angular Applications](https://luixaviles.com/2017/08/setup-local-environment-angular-apps)
+
+
+Este proyecto fué generado usando [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
 
