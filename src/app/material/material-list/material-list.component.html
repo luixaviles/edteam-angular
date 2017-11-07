@@ -1,20 +1,6 @@
 <mat-list>
-  <mat-list-item>
-    <img mat-line mat-list-avatar
-         src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="">
-    <span mat-line>{{estudiante1.nombre}}</span>
-    <span mat-line>{{estudiante1.ciudad}}</span>
-  </mat-list-item>
-  <mat-list-item>
-      <img mat-line mat-list-avatar
-      src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="">
-      <span mat-line>{{estudiante2.nombre}}</span>
-      <span mat-line>{{estudiante2.ciudad}}</span>
-  </mat-list-item>
-  <mat-list-item>
-      <img mat-line mat-list-avatar
-      src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="">
-      <span mat-line>{{estudiante3.nombre}}</span>
-      <span mat-line>{{estudiante3.ciudad}}</span>
-  </mat-list-item>
+  <ed-item-estudiante *ngFor="let est of listaEstudiantes"
+                      [estudiante]="est"
+                      (onMouseClick)="onMouseClick($event)">
+  </ed-item-estudiante>
 </mat-list>

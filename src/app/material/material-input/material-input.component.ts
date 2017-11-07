@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialInputComponent implements OnInit {
 
+  usuario = {
+    nombre: 'Luis'
+  };
+
+  placeholder = {
+    nombre: 'Nombre'
+  };
+
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.usuario.nombre = 'Juan';
+      this.placeholder.nombre = 'Apellido';
+    }, 2000);
+  }
+
+  onKeyUp($event) {
+    console.log('keyUp, ', $event);
+  }
+
+  onBlur($event: FocusEvent) {
+    console.log('onBlur, ', $event);
   }
 
 }
