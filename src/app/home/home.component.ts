@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Apod } from '../shared/model/apod';
+import { NasaApiService } from '../shared/services/nasa-api.service';
 
 @Component({
   selector: 'ed-home',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  apod: Apod;
+  constructor(private nasaApi: NasaApiService) {
+  }
 
   ngOnInit() {
+    this.apod = this.nasaApi.getApod();
   }
 
 }
