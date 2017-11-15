@@ -7,7 +7,8 @@ import {
   MatExpansionModule,
   MatInputModule,
   MatListModule,
-  MatCardModule
+  MatCardModule,
+  MatProgressSpinnerModule
  } from '@angular/material';
 
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
@@ -25,7 +26,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatExpansionModule,
     MatInputModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     MatToolbarModule,
@@ -34,7 +36,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatExpansionModule,
     MatInputModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent, ItemEstudianteComponent]
 })
